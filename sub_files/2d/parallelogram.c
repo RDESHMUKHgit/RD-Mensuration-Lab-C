@@ -7,7 +7,7 @@ void which_in_parallelogram()
     printf(BOLD_BLACK "[0] EXIT the program\n" RESET);
 
     choice = get_valid_number("Enter your choice here: ");
-    scanf("%d", &choice);
+
     validate_less_greater(choice, 0, 2);
 
     switch (choice)
