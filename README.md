@@ -51,7 +51,7 @@
 ### 🔧 Clone the Repository
 
 ```bash
-git clone https://github.com/RDESHMUKHgit/RD-Mensuration-Lab-C.git
+git clone https://github.com/RDESHMUKHgit/repo-name.git
 ```
 
 ### ▶️ Running the App
@@ -73,6 +73,46 @@ Then run:
 #### Option 2: Using File Explorer (Beginner-Friendly)
 
 ## Open the `project` folder in File Explorer, and double-click on `main.exe` to launch the application.
+
+<pre>
+<details>
+<summary>📁 Project Folder Structure</summary>
+
+│   directions.c
+│   main.c
+│   main.exe
+│   readme.md
+│
+├───media
+│       Screenshot_1.png
+│       ss2.png
+│       ss3.png
+│       ss4.png
+│       ss5.png
+│
+└───sub_files
+    │   utils.c
+    │
+    ├───2d
+    │       circle.c
+    │       parallelogram.c
+    │       rect.c
+    │       rhombus.c
+    │       square.c
+    │       trapezium.c
+    │       triangle.c
+    │
+    └───3d
+            cone.c
+            cube.c
+            cuboid.c
+            cylinder.c
+            hemisphere.c
+            parallelepiped.c
+            pyramid.c
+            sphere.c
+</details>
+</pre>
 
 ## 📜 License
 
