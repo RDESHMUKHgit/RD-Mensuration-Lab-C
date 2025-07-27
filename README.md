@@ -139,6 +139,8 @@ Feel free to use, modify, and distribute it — just give proper credit.
 
 ## 💡 Future Plans & Enhancements
 
+- Seamless 'Play Again' functionality after every calculation!
+
 - Add unit conversion (cm ⇄ m ⇄ inch)
 
 - Option to save results in a .txt file
