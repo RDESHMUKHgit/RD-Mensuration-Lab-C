@@ -12,6 +12,8 @@
 #include <ctype.h>
 #include <math.h>
 #include <time.h>
+#include <unistd.h>  // for sleep() on Unix-like systems
+#include <windows.h> // for system() on Windows
 
 //$ ===== PI =====
 #ifndef M_PI
@@ -103,7 +105,7 @@ void print_header()
     strftime(day_str, sizeof(day_str), "📆 Day : %A", local);
 
     center_text("|--------------------------------------------------------------------------------------------------|", BG_BLACK);
-    center_text("🚀 Welcome to Rudraksha's C Program!", BG_WHITE);
+    center_text("🚀 Welcome to Rudraksha's C Program!", BG_BLACK);
     center_text(" __  __                                _   _               __  __           _             ", YELLOW);
     center_text("|  \\/  |                              | | (_)             |  \\/  |         | |            ", YELLOW);
     center_text("| \\  / | ___ _ __  ___ _   _ _ __ __ _| |_ _  ___  _ __   | \\  / | __ _ ___| |_ ___ _ __  ", YELLOW);
@@ -146,7 +148,7 @@ int validate_start_choices(int choice)
     }
 }
 
-void validate_less_greater(int value, int min, int max)
+int validate_less_greater(int value, int min, int max)
 {
     if (value < min || value > max)
     {
@@ -175,7 +177,7 @@ void please_wait()
     sleep(1);
 }
 
-void not_negative(double pos)
+double not_negative(double pos)
 {
     if (pos < 0)
     {
